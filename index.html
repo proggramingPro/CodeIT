@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeIT</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h2 class="logo">CodeIT</h2>
+        <nev class="nevigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">contact</a>
+            <a href="#">service</a>
+            <button class="btnlogin-popup">Login</button>
+        </nev>
+    </header>
+    
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-feild" placeholder="Username" required>
+                <input type="text" class="input-feild" placeholder="password" required>
+                <input type="checkbox" class="chech-box"><span>Rmember me</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form id="register" class="input-group" action="connect.php" method="post">
+                <input type="text" class="input-feild" placeholder="Username" required name="Username">
+                <input type="text" class="input-feild" placeholder="Email Id" required name="Email">
+                <input type="text" class="input-feild" placeholder="password" required name="password">
+                <input type="checkbox" class="chech-box"><span>I agree to the terms & condition</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form> 
+        </div>
+       
+    </div>
+    <script>
+       var x=document.getElementById("login");
+       var y=document.getElementById("register");
+       var z=document.getElementById("btn");
+
+       function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+
+       }
+       function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+       }
+
+
+
+
+
+    </script>
+
+    <div class="title">
+        <h1>Let's Build Up the Knowledge..</h1>
+    <img class="lg" src="logo.png">
+    </div>
+
+
+
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button type="submit"><span><ion-icon name="search-sharp"></ion-icon></span></button>
+    </div>
+
+
+
+    <h2 class="box1">Programming languages</h2>
+    <div class="flex-container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+        <div class="box">Box 6</div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 CodeIT. All rights reserved.</p>
+        </div>
+    
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    
+</body>
+
+
+</html>
