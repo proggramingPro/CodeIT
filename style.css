@@ -29,6 +29,7 @@ header{
     z-index: 99;
 }
 
+
 .logo{
     font-size: 2em;
     color: #fff;
@@ -213,8 +214,9 @@ h1{
 }
 
 .flex-container {
-    left:160px;
+    left:110px;
     display: flex;
+    top: 120px;
     
     margin: 50px;
     width: 800px;
@@ -225,12 +227,21 @@ h1{
     flex-wrap: wrap;
     margin-left: 200px;
 }
+.box:hover{
+    height:120px ;
+    transition: .5s ease;
+}
+#cont:hover{
+    width:850px;
+    height:300px;
+    transition: .9s ease;
+}
 .box1{
     color: #eff8ff;
-    top: 900px;
+    top: 677px;
     font-size: 35px;
     position: absolute;
-    left: 550px;
+    left: 490px;
 }
 .box {
     flex: 1;
@@ -254,28 +265,23 @@ h1{
     margin: 10px;
     text-align: center;
 }
-.search-container {
-    margin: 200px;
-    top: 500px;
-    display: flex;
-    justify-content: center;
-}
 
 .search-container input[type="text"] {
-    padding: 10px;
-    width: 350px;
     border: 1px solid #ccc;
     border-radius: 20px;
 }
 
 .search-container button {
-    padding: 10px 20px;
+    
     border: 1px solid #ccc;
     border-radius: 20px;
     background-color: #f0f0f0;
     cursor: pointer;
-    margin-left: 5px;
-}
+    width: 27px;
+    height: 25px;
+    
+
+} 
 
 .search-container button:hover {
     background-color: #e0e0e0;
